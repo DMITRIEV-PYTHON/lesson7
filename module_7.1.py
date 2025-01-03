@@ -42,7 +42,6 @@ class Shop:
         return products_shop
 
     def add(self, *products):
-        shop_file = self.get_product()
         for i in products:
             if self.get_product().find(f'{i.name},') == -1:
                 # Когда get_product().find(f'{i.name},') не удается найти {i.name} в get_product()
