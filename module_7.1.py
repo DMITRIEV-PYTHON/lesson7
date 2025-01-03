@@ -43,7 +43,7 @@ class Shop:
 
     def add(self, *products):
         for i in products:
-            if self.get_product().find(f'{i.name},') == -1:
+            if self.get_product().find(f"{i.name},") == -1:
                 # Когда get_product().find(f'{i.name},') не удается найти {i.name} в get_product()
                 # возвращается (-1). Это связано с тем, что .find вернет первый индекс, по которому
                 # он сможет найти ваш запрос, и поэтому, что б не было путаницы с индексами
@@ -60,11 +60,11 @@ class Shop:
 
 s1 = Shop()
 
-p1 = Product('Potato', 50.5, 'Vegetables')
+p1 = Product("Potato", 50.5, "Vegetables")
 
-p2 = Product('Spaghetti', 3.4, 'Groceries')
+p2 = Product("Spaghetti", 3.4, "Groceries")
 
-p3 = Product('Potatot', 5.5, 'Vegetables')
+p3 = Product("Potatot", 5.5, "Vegetables")
 
 print(p2)  # __str__
 
